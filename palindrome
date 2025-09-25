@@ -1,0 +1,12 @@
+function isPalindrome(input) {
+  let str = input.toString().toLowerCase().replace(/[^a-z0-9]/g, "");
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+// Example usage:
+console.log(isPalindrome("madam"));      // true
+console.log(isPalindrome("Racecar"));    // true
+console.log(isPalindrome("hello"));      // false
+console.log(isPalindrome(121));          // true
+console.log(isPalindrome(123));          // false
